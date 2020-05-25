@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlaylistComponent } from './playlist/playlist.component';
 
 @Component({
   selector: 'app-karaoke',

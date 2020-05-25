@@ -1,0 +1,19 @@
+.body {
+    width: 99%;
+    height: 85vh;
+    padding: 5px;
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+.desk {
+    height: 300px;
+    width: 200px;
+    background: url(../../../assets/sprite-test.jpg);
+    background-repeat: no-repeat;
+    border: solid;
+}
+
+.desk:hover{
+    background: url(../../../assets/sprite-test.jpg) 0 -300px;
+}

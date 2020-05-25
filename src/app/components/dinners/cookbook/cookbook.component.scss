@@ -1,0 +1,40 @@
+.cookbook{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    // width: 60%;
+    // align-self: center;
+    // align-items: left;
+}
+
+.randomizer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // width:20%;
+    // height: 40%;
+}
+
+.randomized {
+    background-color: lightsteelblue;
+    border-radius: 3px;
+    margin: 10px 25px 10px 0px;
+    border-style: none;
+    box-shadow: 0 3px #999;
+    padding: 10px;
+}
+
+.randomized:hover{
+    background-color: slategray;
+    color: white;
+}
+
+.randomized:active{
+    background-color: black;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.result{
+    background-color: white;
+}

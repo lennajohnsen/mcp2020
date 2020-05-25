@@ -1,0 +1,58 @@
+<div class="cookbook">
+
+    <div class="randomizer">
+        <button (click)=selectRandomBrekkie(breakfast_recipes) class="randomized">BREAKFAST</button>
+        <app-menu-add [random_item]="this.random_brekkie" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_brekkie"></app-recipe>
+    </div>
+
+    <div class="randomizer">
+        <button (click)=selectRandomApp(appetizer_recipes) class="randomized">APPETIZER</button>
+        <app-menu-add [random_item]="this.random_app" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_app"></app-recipe>
+    </div>
+
+    <div class="randomizer">
+        <button (click)=selectRandomSoup(soup_recipes) class="randomized">SOUP</button>
+        <app-menu-add [random_item]="this.random_soup" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_soup"></app-recipe>
+
+    </div>
+
+    <div class="randomizer">
+        <button (click)=selectRandomEntree(entree_recipes) class="randomized">ENTREE</button>
+        <app-menu-add [random_item]="this.random_entree" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_entree"></app-recipe>
+    </div>
+
+    <div class="randomizer">
+        <button (click)=selectRandomSalad(salad_recipes) class="randomized">SALAD</button>
+        <app-menu-add [random_item]="this.random_salad" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_salad"></app-recipe>
+    </div>
+
+    <div class="randomizer">
+        <button (click)=selectRandomSide(sidedish_recipes) class="randomized">SIDE DISH</button>
+        <app-menu-add [random_item]="this.random_side" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_side"></app-recipe>
+    </div>
+
+    <div class="randomizer">
+        <button (click)=selectRandomSnack(snack_recipes) class="randomized">SNACK</button>
+        <app-menu-add [random_item]="this.random_snack" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_snack"></app-recipe>
+    </div>
+
+    <div class="randomizer">
+        <button (click)=selectRandomDessert(dessert_recipes) class="randomized">DESSERT</button>
+        <app-menu-add [random_item]="this.random_dessert" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_dessert"></app-recipe>
+    </div>
+
+    <div class="randomizer">
+        <button (click)=selectRandomBevvie(beverage_recipes)  class="randomized">BEVERAGE</button>
+        <app-menu-add [random_item]="this.random_bevvie" (valueChange)='addChoice($event)'></app-menu-add>
+        <app-recipe [details]="this.random_bevvie"></app-recipe>
+    </div>
+
+</div>

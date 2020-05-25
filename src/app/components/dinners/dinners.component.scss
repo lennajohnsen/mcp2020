@@ -1,0 +1,43 @@
+.body {
+    width: 99%;
+    height: 85vh;
+    padding: 5px;
+    display: flex;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    width: 23%;
+}
+
+.menu-content{
+    display: flex;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+    padding: 0 15px 0 15px;
+}
+
+.action{
+    width: 10%;
+    align-self: center;
+}
+
+.item {
+    width: 90%;
+}
+
+.recipes {
+    width: 43%;
+}
+
+.final-third{
+    width: 33%;
+    margin: 0 40px 0 10px ;
+}
+
+.blank{
+    color:white;
+}

@@ -1,0 +1,38 @@
+.nav-bar{
+    background-color: lightgrey;
+    width: 99%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.nav-button{
+    background-color: darkgrey;
+    border-radius: 3px;
+    margin: 5px 10px 5px 10px;
+    width: 20%;
+    border-style: none;
+    box-shadow: 0 3px #999;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-button:hover{
+    background-color: teal;
+    color: white;
+}
+
+.nav-button:active{
+    background-color: teal;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.title{
+    margin: 5px 10px 5px 10px;
+    width: 20%;
+    align-self: center;
+}
+

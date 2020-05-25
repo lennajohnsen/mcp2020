@@ -1,10 +1,30 @@
 
-<nav>
-  <a routerLink="/desk"> desk </a>
-  <a routerLink="/speaker"> karaoke </a>
-  <a routerLink="/award"> paper plate awards </a>
-  <a routerLink="/clock"> power hour </a>
-  <a routerLink="/snack"> dinner </a>
+<nav class="nav-bar">
+
+  <div class="title">
+      <h3> MCP2020 Celebrates !! </h3>
+  </div>
+
+  <button class="nav-button" routerLink="/desk"> 
+    Your Desk
+  </button>
+
+  <button class="nav-button" routerLink="/snack">
+    Monday Dinner
+  </button>
+
+  <button class="nav-button" routerLink="/speaker">
+    Tuesday Karaoke
+  </button>
+  
+  <button class="nav-button" routerLink="/clock">
+    Wednesday Power Hour
+  </button>
+  
+  <button class="nav-button" routerLink="/award">
+    Thursday Paper Plate Awards
+  </button>    
+
 </nav>
 
 <router-outlet></router-outlet>

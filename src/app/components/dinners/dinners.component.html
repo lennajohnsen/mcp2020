@@ -1,1 +1,62 @@
-<p>dinners works!</p>
+<div class="body">
+
+    <div class="final-third">
+        <h2>DIGIDINS</h2>
+        <h3> Not sure what to cook?</h3>
+        <p>
+            Use this menu generator to phone a MCP friend!
+        </p>
+        <ol>
+            <li> Click each button to the left to get a random recipe </li>
+            <li> Use the <app-menu-add></app-menu-add> to add a recipe to your selections </li>
+            <li> And feel free to use the <app-menu-subtract></app-menu-subtract> to remove them from your list </li>
+            <li> Then grab your MCP2020 cookbook or PDF and start cooking! </li>
+        </ol>
+        <p>
+            **Warning, your selections will <strong>not</strong> save if you navigate away from this page
+            so make a note, use a post-it, or take a screenshot if you want to check out the other tabs!
+        </p>
+
+    </div>
+    
+    <div class="recipes">
+        <h2 class="blank"> bu bye</h2>
+        <h3> Menu Generator: </h3>
+        <!-- <app-cookbook (valueChange)='displayChoice($event)'></app-cookbook> -->
+        <app-cookbook (valueChange)='displayChoice($event)'></app-cookbook>
+    </div>
+
+    <div class="menu">
+        <h2 class="blank"> bu bye</h2>
+    <div class="selected">
+        <h3> Your Selections: </h3>
+
+        <div *ngFor="let item of this.menu" class="menu-content">
+            <app-menu-subtract class="action" (valueChange)='removeChoice($event)' [item]="item"></app-menu-subtract>
+            <app-recipe class="item" [details]="item"></app-recipe>
+        </div>
+    </div>
+        
+    </div>
+    
+</div>
+
+<!-- <form [formGroup]="profileForm" (ngSubmit)="onSubmit()"> 
+
+    <label>
+        First Name:
+        <input type="text" formControlName="firstName" required>
+    </label>
+
+    <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+    </label>
+
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
+
+<p>
+    Form Status: {{ profileForm.status }}
+    Form Value: {{ profileForm.value | json }}
+</p> -->

@@ -8,12 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PowerHourComponent implements OnInit {
 
-  timeoutID
-
   constructor() {}
 
   ngOnInit(): void {}
 
+  timeoutID
   delayedAlert() {
     this.timeoutID = window.setTimeout(window.alert, 2*1000, 'That was really slow!');
   }
