@@ -1,0 +1,15 @@
+<nav id="sidebar" [ngClass]="{'hidden': sideNavService.hideSideNav }">
+
+  <ul class="navbar-nav" *ngIf="this.view === 'resources'">
+    <li class="nav-item">
+      <p> resources </p>
+    </li>
+  </ul>
+
+  <ul class="navbar-nav" *ngIf="this.view === 'cases'">
+    <li class="nav-item">
+      <p> cases </p>
+    </li>
+  </ul>
+
+</nav>

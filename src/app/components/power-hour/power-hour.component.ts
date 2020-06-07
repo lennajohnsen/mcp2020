@@ -13,8 +13,18 @@ export class PowerHourComponent implements OnInit {
   ngOnInit(): void {}
 
   timeoutID
+  value
+
   delayedAlert() {
-    this.timeoutID = window.setTimeout(window.alert, 2*1000, 'That was really slow!');
-  }
+    this.timeoutID = setTimeout(this.setValue, 5000);
+  };
+
+  setValue() {
+    this.value = this.timeoutID + 1
+    console.log(this.value)
+  };
+
+
+  //every 5 minutes, produce 5 thesis titles w/ blanks (+ validation for form fill)
 
 }
